@@ -26,7 +26,7 @@ console.log(timeCovert(200));*/
 
 function timeCovert (n) {
     var num = n;
-    var hours = Math.floor (num / 60);
+    var hours = (num / 60);
     var rhours = Math.floor(hours);
     var minutes = (hours - rhours) * 60;
     var rminutes = Math.floor(minutes);
