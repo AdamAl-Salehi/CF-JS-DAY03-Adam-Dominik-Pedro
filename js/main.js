@@ -15,11 +15,11 @@
 function timeCovert (n) {
     var num = n;
     var hours = Math.floor (num / 60);
-    // var rhours = Math.floor(hours);
-    var minutes = (hours - rhours) * 60;
-    var rminutes = Math.floor(minutes);
-    return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+    //var rhours = Math.floor(hours);
+    var minutes = Math.floor(num % 60) ;
+    //var rminutes = Math.round(minutes);
+    return num + " minutes = " + hours + " hour(s) and " + minutes + " minute(s).";
 
 }
 
-console.log(timeCovert(300));
+console.log(timeCovert(200));
