@@ -12,7 +12,7 @@
 
 //Advance 1
 
-function timeCovert (n) {
+/*function timeCovert (n) {
     var num = n;
     var hours = Math.floor (num / 60);
     //var rhours = Math.floor(hours);
@@ -22,4 +22,15 @@ function timeCovert (n) {
 
 }
 
-console.log(timeCovert(200));
+console.log(timeCovert(200));*/
+
+function timeCovert (n) {
+    var num = n;
+    var hours = Math.floor (num / 60);
+    var rhours = Math.floor(hours);
+    var minutes = (hours - rhours) * 60;
+    var rminutes = Math.floor(minutes);
+    return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+}
+console.log(timeCovert(100));
+
